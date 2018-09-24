@@ -8,6 +8,6 @@ spring:
 eureka:
   client:
     registerWithEureka: false
-    fetchRegister:  false
+    fetchRegistry:  false
     server:
       waitTimeInMsWhenSyncEmpty: 5
