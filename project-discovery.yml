@@ -1,1 +1,13 @@
-service-name: discovery
+server:
+  port: 8761
+  
+spring:
+  application:
+    name: project-discovery
+  
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegister:  false
+    server:
+      waitTimeInMsWhenSyncEmpty: 5
