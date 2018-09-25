@@ -1,1 +1,10 @@
-service-name: gateway
+server:
+    port:   9000
+    
+spring:
+  application:
+    name: project-gateway
+
+zuul:
+    routes:
+        userservice:    /user/**
