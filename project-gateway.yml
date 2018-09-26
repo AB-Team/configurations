@@ -5,6 +5,11 @@ spring:
   application:
     name: project-gateway
 
+management:
+  endpoint:
+    routes:
+      enabled: true
+
 zuul:
     routes:
         userservice:    /user/**
