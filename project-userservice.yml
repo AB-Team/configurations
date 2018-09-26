@@ -14,3 +14,9 @@ spring:
       ddl-auto: none
       dialect:    org.hibernate.dialect.MySQLDialect
   
+logging:
+  level:
+    org:
+      springframework:
+        web:  DEBUG
+      hibernate:  ERROR
