@@ -5,6 +5,15 @@ spring:
   application:
     name: project-gateway
 
+management:
+  endpoint:
+    routes:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  
 zuul:
     routes:
         userservice:    /user/**
