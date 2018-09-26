@@ -10,6 +10,12 @@ management:
     routes:
       enabled: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 zuul:
     routes:
         userservice:    /user/**
