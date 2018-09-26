@@ -1,6 +1,17 @@
 server:
-    port:   9500
+  port:   9500
     
 spring:
   application:
-    name: userservice
+    name:   userservice
+    
+spring:
+  datasource:
+    driver-class-name:  com.mysql.jdbc.Driver
+    url:    jdbc:mysql://localhost:3306/videoanalytics
+    username:   myuser
+    password:   mypassword
+  jpa:
+    hibernate:
+      ddl-auto:   update
+      dialect:    org.hibernate.dialect.MySQLDialect
