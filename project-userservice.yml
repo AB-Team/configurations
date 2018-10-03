@@ -13,6 +13,14 @@ spring:
     hibernate:
       ddl-auto: none
       dialect:    org.hibernate.dialect.MySQLDialect
+  data:
+    mongodb:
+        application-database:   userDP
+        username:   app_user
+        password:   app_password
+        database:   userDP
+        port:   27017
+        host:   localhost
   
 logging:
   level:
